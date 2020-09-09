@@ -1,0 +1,20 @@
+.container {
+  width: 120rem;
+  margin: 2rem auto;
+  display: flex;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.sidebar {
+  height: 100vh;
+  flex-basis: content;
+  background-color: black;
+}
+
+.main {
+  height: 100vh;
+  overflow: scroll;
+  flex-basis: 100%;
+  background-color: #ccc;
+}

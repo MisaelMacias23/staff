@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6; }
+
+.container {
+  width: 120rem;
+  margin: 2rem auto;
+  display: flex;
+  border-radius: 3px;
+  overflow: hidden; }
+
+.sidebar {
+  height: 100vh;
+  flex-basis: content;
+  background-color: black; }
+
+.main {
+  height: 100vh;
+  overflow: scroll;
+  flex-basis: 100%;
+  background-color: #ccc; }
