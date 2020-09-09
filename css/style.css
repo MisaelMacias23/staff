@@ -13,7 +13,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  color: white;
+  color: #faf9f9;
   background-image: linear-gradient(to right bottom, #ff3366, #ba265d);
   background-size: cover;
   background-repeat: no-repeat; }
@@ -67,7 +67,7 @@ body {
       transition: all 0.3s;
       border-radius: 50%;
       fill: #faf9f9;
-      background-color: #999;
+      background-color: #777;
       cursor: pointer; }
       .info__avatar__icon:hover {
         opacity: 1;
@@ -81,10 +81,12 @@ body {
     font-weight: 300;
     color: #ccc; }
   .info__contact {
+    margin: 1rem 0;
     display: flex;
     width: 100%;
     justify-content: center; }
   .info__technologies {
+    margin: 2rem 0;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -99,11 +101,19 @@ body {
   transition: all 0.3s;
   border-radius: 50%;
   fill: #faf9f9;
+  backface-visibility: hidden;
   cursor: pointer; }
   .contact-icon:hover {
     opacity: 1;
-    transform: scale(1.1);
+    transform: scale(1.15) translateY(-3px);
     fill: #eb2f64; }
+
+.quote {
+  text-align: center;
+  font-size: 1.6rem;
+  font-style: italic;
+  font-weight: 300;
+  margin: 6rem 0; }
 
 .tech_icon {
   height: 6rem;
