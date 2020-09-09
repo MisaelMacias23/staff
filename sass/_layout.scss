@@ -1,20 +1,26 @@
 .container {
   width: 120rem;
+  height: 100vh;
   margin: 2rem auto;
   display: flex;
   border-radius: 3px;
   overflow: hidden;
+  box-shadow: $shadow-dark;
 }
 
 .sidebar {
-  height: 100vh;
   flex-basis: content;
-  background-color: black;
+  background-color: $color-grey-dark-1;
+  padding: 4rem 2rem;
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .main {
-  height: 100vh;
   overflow: scroll;
   flex-basis: 100%;
-  background-color: #ccc;
+  background-color: $color-grey-light-1;
 }
