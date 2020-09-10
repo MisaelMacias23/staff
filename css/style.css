@@ -180,9 +180,10 @@ body {
     color: #ba265d; }
   .cv__paragraph {
     margin-bottom: 3rem; }
+  .cv__paragraph--experience {
+    margin: 1rem 0; }
   .cv__link {
-    display: block;
-    margin: 1rem 0;
+    display: inline-block;
     color: #999;
     text-decoration: none; }
     .cv__link span {
@@ -208,4 +209,4 @@ body {
   justify-content: space-between;
   font-size: 1.6rem;
   font-style: italic;
-  margin-bottom: 2.5rem; }
+  margin: 1rem 0 3rem 0; }

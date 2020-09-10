@@ -181,9 +181,12 @@
     margin-bottom: 3rem;
   }
 
-  &__link {
-    display: block;
+  &__paragraph--experience {
     margin: 1rem 0;
+  }
+
+  &__link {
+    display: inline-block;
     color: $color-grey-dark-3;
     text-decoration: none;
 
@@ -223,5 +226,5 @@
   font-size: 1.6rem;
   font-style: italic;
   // color: $color-primary-dark;
-  margin-bottom: 2.5rem;
+  margin: 1rem 0 3rem 0;
 }
