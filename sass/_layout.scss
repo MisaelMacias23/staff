@@ -1,7 +1,7 @@
 .container {
   width: 120rem;
   height: 100vh;
-  margin: 2rem auto;
+  margin: 1.5rem auto;
   display: flex;
   border-radius: 3px;
   overflow: hidden;
@@ -11,6 +11,17 @@
 .sidebar {
   flex-basis: content;
   background-color: $color-grey-dark-1;
+  background-image: linear-gradient(
+      rgba($color-grey-dark-1, 0.95),
+      rgba($color-grey-dark-1, 1)
+    ),
+    // url('https://images.unsplash.com/photo-1594823274242-19036bf455e9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80');
+    //url('');
+    url('https://images.unsplash.com/photo-1545229920-f669c6872fa9?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');
+    // url('https://images.unsplash.com/photo-1597239450996-ea7c2c564412?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80');
+    // url('https://images.unsplash.com/photo-1520275126937-9506f7dd123c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80');
+  background-size: cover;
+  background-position: right;
   padding: 4rem 2rem;
   flex-basis: 40%;
   display: flex;
@@ -23,4 +34,5 @@
   overflow: scroll;
   flex-basis: 100%;
   background-color: $color-grey-light-1;
+  color: $color-grey-dark-1;
 }

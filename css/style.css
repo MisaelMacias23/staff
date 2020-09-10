@@ -21,7 +21,7 @@ body {
 .container {
   width: 120rem;
   height: 100vh;
-  margin: 2rem auto;
+  margin: 1.5rem auto;
   display: flex;
   border-radius: 3px;
   overflow: hidden;
@@ -30,6 +30,9 @@ body {
 .sidebar {
   flex-basis: content;
   background-color: #333;
+  background-image: linear-gradient(rgba(51, 51, 51, 0.95), #333333), url("https://images.unsplash.com/photo-1545229920-f669c6872fa9?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+  background-size: cover;
+  background-position: right;
   padding: 4rem 2rem;
   flex-basis: 40%;
   display: flex;
@@ -40,13 +43,15 @@ body {
 .main {
   overflow: scroll;
   flex-basis: 100%;
-  background-color: #faf9f9; }
+  background-color: #faf9f9;
+  color: #333; }
 
 .info {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
   .info__avatar {
     height: 20rem;
     width: 20rem;
@@ -55,25 +60,6 @@ body {
     background-size: cover;
     margin-bottom: 2rem;
     position: relative; }
-    .info__avatar__icon {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      padding: 1rem;
-      height: 4.5rem;
-      width: 4.5rem;
-      margin: 0 1rem;
-      opacity: 0.85;
-      transition: all 0.3s;
-      border-radius: 50%;
-      fill: #faf9f9;
-      background-color: #777;
-      cursor: pointer; }
-      .info__avatar__icon:hover {
-        opacity: 1;
-        transform: scale(1.1);
-        fill: #eb2f64;
-        background-color: #f0eeee; }
   .info__title {
     font-size: 2.5rem; }
   .info__subtitle {
@@ -85,6 +71,33 @@ body {
     display: flex;
     width: 100%;
     justify-content: center; }
+
+.float-email {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1rem;
+  height: 4.5rem;
+  width: 4.5rem;
+  margin: 0 1rem;
+  opacity: 0.85;
+  transition: all 0.3s;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #777;
+  cursor: pointer; }
+  .float-email__icon {
+    height: 4.5rem;
+    width: 4.5rem;
+    fill: #faf9f9; }
+  .float-email:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    background-color: #f0eeee; }
+  .float-email:hover .float-email__icon {
+    fill: #eb2f64; }
 
 .contact-icon {
   height: 3rem;
@@ -138,3 +151,13 @@ body {
     height: 100%;
     width: 100%;
     object-fit: cover; }
+
+.cv {
+  padding: 2rem; }
+
+.title {
+  font-size: 2.2rem; }
+
+.paragraph {
+  font-size: 1.6rem;
+  font-weight: 300; }
