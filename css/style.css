@@ -161,6 +161,8 @@ body {
   .bg-video__title {
     position: absolute;
     color: #faf9f9;
+    font-style: italic;
+    font-weight: 300;
     font-size: 4rem; }
 
 .cv {
@@ -170,9 +172,24 @@ body {
   .cv__title {
     font-size: 2.2rem;
     font-weight: 400;
-    margin-bottom: 0.5rem; }
+    margin-bottom: 1rem; }
+  .cv__subtitle {
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-style: italic;
+    color: #ba265d; }
   .cv__paragraph {
     margin-bottom: 3rem; }
+  .cv__link {
+    display: block;
+    margin: 1rem 0;
+    color: #999;
+    text-decoration: none; }
+    .cv__link span {
+      transition: all .25s; }
+    .cv__link:hover span {
+      margin-left: 1rem;
+      color: #eb2f64; }
   .cv ul {
     margin-bottom: 3rem; }
   .cv ul li {
@@ -185,3 +202,10 @@ body {
     font-weight: bold;
     display: inline-block;
     width: 1rem; }
+
+.date-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  font-style: italic;
+  margin-bottom: 2.5rem; }

@@ -150,8 +150,10 @@
   &__title {
     position: absolute;
     color: $color-grey-light-1;
-    // font-style: italic;
+    font-style: italic;
+    font-weight: 300;
     font-size: 4rem;
+    
   }
 }
 
@@ -163,11 +165,36 @@
   &__title {
     font-size: 2.2rem;
     font-weight: 400;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  &__subtitle {
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-style: italic;
+    color: $color-primary-dark;
+    // display: inline-block;
+    // margin-bottom: 0.5rem;
   }
 
   &__paragraph {
     margin-bottom: 3rem;
+  }
+
+  &__link {
+    display: block;
+    margin: 1rem 0;
+    color: $color-grey-dark-3;
+    text-decoration: none;
+
+    span {
+      transition: all .25s;
+    }
+
+    &:hover span{
+      margin-left: 1rem;
+      color: $color-primary;
+    }
   }
 
   ul {
@@ -187,4 +214,14 @@
     display: inline-block;
     width: 1rem;
   }
+
+}
+
+.date-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  font-style: italic;
+  // color: $color-primary-dark;
+  margin-bottom: 2.5rem;
 }
