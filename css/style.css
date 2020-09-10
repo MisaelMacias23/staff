@@ -13,6 +13,10 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #faf9f9;
   background-image: linear-gradient(to right bottom, #ff3366, #ba265d);
   background-size: cover;
@@ -20,8 +24,7 @@ body {
 
 .container {
   width: 120rem;
-  height: 100vh;
-  margin: 1.5rem auto;
+  height: 98vh;
   display: flex;
   border-radius: 3px;
   overflow: hidden;
@@ -122,8 +125,9 @@ body {
 
 .technologies {
   margin: 2rem 0; }
-  .technologies__subtitle {
+  .technologies__title {
     font-size: 1.8rem;
+    font-weight: 300;
     text-align: center;
     margin-bottom: 1.5rem; }
   .technologies__container-logos {
@@ -135,29 +139,49 @@ body {
     height: 6rem;
     width: 6rem;
     margin: 0 1rem;
-    opacity: 0.85;
+    opacity: 0.8;
     transition: all 0.25s; }
     .technologies__programming-logo:hover {
       opacity: 1;
       transform: scale(1.1); }
 
 .bg-video {
-  height: 30rem;
+  height: 24.5rem;
   width: 100%;
-  z-index: -1;
-  opacity: 0.5;
-  overflow: hidden; }
+  opacity: 0.6;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .bg-video__content {
     height: 100%;
     width: 100%;
     object-fit: cover; }
+  .bg-video__title {
+    position: absolute;
+    color: #faf9f9;
+    font-size: 4rem; }
 
 .cv {
-  padding: 2rem; }
-
-.title {
-  font-size: 2.2rem; }
-
-.paragraph {
+  padding: 3rem;
   font-size: 1.6rem;
   font-weight: 300; }
+  .cv__title {
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem; }
+  .cv__paragraph {
+    margin-bottom: 3rem; }
+  .cv ul {
+    margin-bottom: 3rem; }
+  .cv ul li {
+    font-weight: 400;
+    margin: 1rem 0;
+    list-style: none; }
+  .cv ul li::before {
+    content: '\2022';
+    color: #eb2f64;
+    font-weight: bold;
+    display: inline-block;
+    width: 1rem; }
