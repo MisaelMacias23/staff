@@ -1,5 +1,4 @@
 // SIDEBAR
-
 .info {
   display: flex;
   flex-direction: column;
@@ -22,6 +21,7 @@
   }
 
   &__subtitle {
+    text-align: center;
     font-size: 1.8rem;
     font-weight: 300;
     color: $color-grey-light-4;
@@ -184,6 +184,11 @@
     font-size: 4rem;
     text-transform: uppercase;
     letter-spacing: 3px;
+    text-align: center;
+
+    @media only screen and (max-width: $bp-xs) {
+      font-size: 3rem;
+    }
     
   }
 }
@@ -192,6 +197,10 @@
   padding: 3rem;
   font-size: 1.6rem;
   font-weight: 300;
+
+  @media only screen and (max-width: $bp-xs) {
+    padding: 1.5rem;
+  }
 
   &__title {
     letter-spacing: 2px;
@@ -258,28 +267,24 @@
   justify-content: space-between;
   font-size: 1.6rem;
   font-weight: 100;
-  font-style: italic;
-  // color: $color-primary-dark;
   margin: 1rem 0 3rem 0;
+  font-style: italic;
+
+  :nth-child(2) {
+    margin: 0 .7rem;
+    text-align: center;
+  }
+
+  :nth-child(3) {
+    text-align: right;
+  }
+
+  
+  @media only screen and (max-width: $bp-medium) {
+    font-style: normal;
+  }
 }
 
-.call-to-action {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 3rem;
-
-  &__btn {
-    font-size: 1.5rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    border-radius: 100px;
-    padding: 1.5rem 4rem;
-    border: none;
-    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
-    color: $color-grey-light-1;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-  }
+.copyright {
+  text-align: center;
 }
