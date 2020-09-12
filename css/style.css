@@ -36,7 +36,7 @@ body {
   background-image: linear-gradient(rgba(51, 51, 51, 0.95), #333333), url("https://i.pinimg.com/564x/ba/a6/a5/baa6a5b93c97bbc35bc6367a8b0e27c4.jpg");
   background-size: cover;
   background-position: right;
-  padding: 4rem 2rem;
+  padding: 3rem 2rem;
   flex-basis: 40%;
   display: flex;
   flex-direction: column;
@@ -74,6 +74,19 @@ body {
     display: flex;
     width: 100%;
     justify-content: center; }
+  .info__footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-style: italic; }
+    .info__footer ::selection {
+      background-color: #068983; }
+    .info__footer > * {
+      display: flex;
+      align-items: center; }
 
 .float-email {
   position: absolute;
@@ -116,6 +129,11 @@ body {
     opacity: 1;
     transform: scale(1.15) translateY(-3px);
     fill: #068983; }
+  .contact-icon--footer {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: .5rem;
+    fill: #faf9f9; }
 
 .quote {
   text-align: center;
@@ -179,7 +197,8 @@ body {
     margin-bottom: 1rem; }
   .cv__subtitle {
     font-size: 1.8rem;
-    font-weight: 400; }
+    font-weight: 400;
+    margin-bottom: 1rem; }
   .cv__paragraph {
     margin-bottom: 3rem; }
   .cv__paragraph--experience {
