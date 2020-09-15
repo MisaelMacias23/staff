@@ -33,3 +33,22 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+
+
+@media only screen and (min-width: $bp-medium) {
+  ::-webkit-scrollbar {
+    width: .5rem;
+  }
+  
+  ::-webkit-scrollbar-track {
+    height: .5rem;
+    background-color: $color-grey-light-3;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: .5rem;
+    background-color: $color-primary;
+    background-image: linear-gradient($color-primary, #3E5151);
+  }
+}

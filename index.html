@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="css/style.css" />
 
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
+
     <title>Hugo Aracena</title>
   </head>
   <body>
@@ -94,13 +96,17 @@
             <svg class="contact-icon--footer">
               <use xlink:href="assets/img/sprite.svg#icon-mail"></use>
             </svg>
-            <span>haracena.dev@gmail.com</span>
+            <a href="mailto: haracena.dev@gmail.com" class="info__link">
+              <span>haracena.dev@gmail.com</span>
+            </a>
           </div>
           <div>
             <svg class="contact-icon--footer">
-              <use xlink:href="assets/img/sprite.svg#icon-whatsapp"></use>
+              <use xlink:href="assets/img/sprite.svg#icon-phone"></use>
             </svg>
-            <span>+569 61519811</span>
+            <a href="tel:+56961519811" class="info__link">
+              <span>+56 9 6151 9811</span>
+            </a>
           </div>
         </div>
         
@@ -195,7 +201,7 @@
           <h3 class="cv__subtitle">Desarrollador móvil freelance</h3>
           <p class="cv__paragraph--experience">
             Desarrollo y despliegue de aplicación móvil “Radionline El Salvador”
-            en Google Playstore, la app fue desarrollada con Flutter y Firebase.
+            en Google Playstore, desarrollé la app con Flutter, integrando la librería audio_service para la reproducción de streamings de radio en background mode, además utilicé Firebase como Backend.
           </p>
           <a
             href="https://play.google.com/store/apps/details?id=com.trisquelstudios.radionline_sv&hl=es_CL"
@@ -214,7 +220,7 @@
           <h3 class="cv__subtitle">Desarrollador móvil freelance</h3>
           <p class="cv__paragraph--experience">
             Desarrollo y despliegue de aplicación móvil “Ciclo Cósmico” en
-            Google Playstore, la app fue desarrollada con Ionic Framework y
+            Google Playstore, desarrollé la app con Ionic Framework y
             Angular. Configuré un VPS en Digital Ocean y desarrollé un API REST
             con Nodejs, logrando una comunicación entre app y servidor mediante
             peticiones HTTP.

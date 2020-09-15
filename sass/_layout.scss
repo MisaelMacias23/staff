@@ -8,11 +8,11 @@
 
   @media only screen and (max-width: $bp-largest) {
     height: 100vh;
+    overflow: auto;
   }
 
   @media only screen and (max-width: $bp-small) {
     display: block;
-    overflow: scroll;
   }
 }
 
@@ -33,18 +33,18 @@
   align-items: center;
 
   @media only screen and (max-width: $bp-small) {
-    height: 100vh;
+    min-height: 100vh;
     justify-content: space-around;
   }  
 }
 
 .main {
-  overflow: scroll;
+  overflow: auto;
   flex-basis: 100%;
   background-color: $color-grey-light-1;
   color: $color-grey-dark-1;
 
-  @media only screen and (max-width: $bp-small) {
-    overflow: visible;
-  }
+  // @media only screen and (max-width: $bp-small) {
+  //   overflow: visible;
+  // }
 }
