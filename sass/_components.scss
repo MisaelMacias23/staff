@@ -217,7 +217,7 @@
     text-transform: uppercase;
     font-size: 2.2rem;
     font-weight: 300;
-    margin-bottom: 1rem;
+    // margin-bottom: 1rem;
 
     padding: 1.5rem;
     background-color: $color-primary;
@@ -253,10 +253,6 @@
     }
   }
 
-  ul {
-    margin-bottom: 3rem;
-  }
-
   ul li {
     font-weight: 400;
     margin: 1rem 0;
@@ -289,6 +285,10 @@
     text-align: right;
   }
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   
   @media only screen and (max-width: $bp-medium) {
     font-style: normal;
@@ -299,6 +299,5 @@
   text-align: center;
   color: $color-grey-dark-2;
   font-size: 1.4rem;
-  padding-top: 2rem;
-  margin-bottom: 1rem;
+  padding: 1rem 0;
 }
