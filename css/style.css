@@ -76,6 +76,9 @@ body {
   background-color: #faf9f9;
   color: #333; }
 
+.section {
+  padding: 2.5rem; }
+
 .info {
   display: flex;
   flex-direction: column;
@@ -228,7 +231,6 @@ body {
         font-size: 3rem; } }
 
 .cv {
-  padding: 3rem;
   font-size: 1.6rem;
   font-weight: 300; }
   @media only screen and (max-width: 26.25em) {
@@ -239,13 +241,15 @@ body {
     text-transform: uppercase;
     font-size: 2.2rem;
     font-weight: 300;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    background-color: #068983;
+    color: #faf9f9;
+    background-image: linear-gradient(to right, #3E5151, #068983); }
   .cv__subtitle {
     font-size: 1.8rem;
     font-weight: 400;
     margin-bottom: 1rem; }
-  .cv__paragraph {
-    margin-bottom: 4rem; }
   .cv__paragraph--experience {
     margin: 1rem 0; }
   .cv__link {
