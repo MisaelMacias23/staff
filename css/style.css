@@ -171,6 +171,9 @@ body {
   font-size: 1.6rem;
   font-style: italic;
   font-weight: 300; }
+  @media only screen and (max-height: 770px) {
+    .quote {
+      display: none; } }
 
 .technologies {
   margin: 2rem 0; }
