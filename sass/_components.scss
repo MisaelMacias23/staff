@@ -212,10 +212,6 @@
   font-size: 1.6rem;
   font-weight: 300;
 
-  @media only screen and (max-width: $bp-xs) {
-    padding: 1.5rem;
-  }
-
   &__title {
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -304,4 +300,5 @@
   color: $color-grey-dark-2;
   font-size: 1.4rem;
   padding-top: 2rem;
+  margin-bottom: 1rem;
 }

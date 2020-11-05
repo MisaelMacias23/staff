@@ -78,6 +78,9 @@ body {
 
 .section {
   padding: 2.5rem; }
+  @media only screen and (max-width: 40.625em) {
+    .section {
+      padding: 1.5rem; } }
 
 .info {
   display: flex;
@@ -233,9 +236,6 @@ body {
 .cv {
   font-size: 1.6rem;
   font-weight: 300; }
-  @media only screen and (max-width: 26.25em) {
-    .cv {
-      padding: 1.5rem; } }
   .cv__title {
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -293,4 +293,5 @@ body {
   text-align: center;
   color: #777;
   font-size: 1.4rem;
-  padding-top: 2rem; }
+  padding-top: 2rem;
+  margin-bottom: 1rem; }
