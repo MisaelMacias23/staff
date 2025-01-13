@@ -335,3 +335,8 @@ body {
 .carousel__button--next {
   right: 10px;
 }
+/*Clase agregada*/
+.pdf_presentation {
+  margin-top: 1rem;
+  margin-bottom: 2.6rem;
+}
