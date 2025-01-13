@@ -8,29 +8,7 @@
 
     <link rel="stylesheet" href="css/style.css" />
 
-    <script>
-  const images = document.querySelector('.carousel__images');
-  const prevButton = document.querySelector('.carousel__button--prev');
-  const nextButton = document.querySelector('.carousel__button--next');
-
-  let currentIndex = 0;
-
-  function updateCarousel() {
-    const offset = -currentIndex * 100; // Mueve el carrusel
-    images.style.transform = `translateX(${offset}%)`;
-  }
-
-  nextButton.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % images.children.length; // Ir al siguiente slide
-    updateCarousel();
-  });
-
-  prevButton.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + images.children.length) % images.children.length; // Ir al anterior
-    updateCarousel();
-  });
-</script>
-
+    
     <link rel="shortcut icon" href="https://ecosistemasglobal.com/wp-content/uploads/2022/06/Isologo.png" type="image/x-icon">
 
     <!-- <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"> -->
@@ -107,15 +85,10 @@
           <section class="section">
             <p class="cv__paragraph">
 
-              <div class="carousel">
-  <div class="carousel__images">
-    <img src="assets/img/page-0001.jpg" alt="Slide 1" class="carousel__image" />
-    <img src="assets/img/page-0002.jpg" alt="Slide 2" class="carousel__image" />
-    <img src="assets/img/page-0003.jpg" alt="Slide 3" class="carousel__image" />
-  </div>
-  <button class="carousel__button carousel__button--prev">&lt;</button>
-  <button class="carousel__button carousel__button--next">&gt;</button>
-</div>  
+        <div class="pdf-container">
+  <embed src="assets/pdf/presentacion.pdf" type="application/pdf" width="100%" height="600px" />
+</div>
+
               
             </p>
           </section>
