@@ -217,8 +217,8 @@ body {
   justify-content: center;
   align-items: center; }
   .bg-video__content {
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: auto;
     object-fit: cover; }
   .bg-video__title {
     position: absolute;
