@@ -110,7 +110,7 @@ body {
     height: 20rem;
     width: 20rem;
     border-radius: 50%;
-    background-image: url("../assets/img/Areli_foto.jpg");
+    background-image: url("areli_foto.jpg");
     background-size: cover;
     margin-bottom: 2rem;
     position: relative; }
