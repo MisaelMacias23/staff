@@ -106,6 +106,15 @@ body {
     margin-bottom: 2rem;
     position: relative; }
 
+    .info__avatar_3 {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    background-image: url("../assets/img/areli_foto.jpg");
+    background-size: cover;
+    margin-bottom: 2rem;
+    position: relative; }
+
     @media only screen and (max-height: 770px) {
       .info__avatar {
         height: 15rem;
