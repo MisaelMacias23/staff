@@ -395,3 +395,24 @@ object {
     height: 70vh; /* Reducir altura en pantallas más pequeñas */
   }
 }
+
+.pdf-download-link {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.download-link {
+  font-size: 1.8rem;
+  color: #068983;
+  text-decoration: none;
+  background-color: #f0eeee;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.download-link:hover {
+  background-color: #068983;
+  color: #faf9f9;
+}
+
