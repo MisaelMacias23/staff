@@ -208,8 +208,8 @@ body {
       transform: scale(1.1); }
 
 .bg-video {
-  height: 23.5rem;
-  width: 100%;
+  height: auto;
+  width: auto;
   opacity: 0.7;
   overflow: auto;
   position: relative;
@@ -217,8 +217,8 @@ body {
   justify-content: center;
   align-items: center; }
   .bg-video__content {
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: auto;
     object-fit: cover; }
   .bg-video__title {
     position: absolute;
@@ -293,3 +293,50 @@ body {
   color: #777;
   font-size: 1.4rem;
   padding: 1rem 0; }
+
+.carousel {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+
+.carousel__images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 300%; /* Depende del número de imágenes */
+}
+
+.carousel__image {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.carousel__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.carousel__button--prev {
+  left: 10px;
+}
+
+.carousel__button--next {
+  right: 10px;
+}
+/*Clase agregada*/
+.pdf_presentation {
+  margin-top: 1rem;
+  margin-bottom: 2.6rem;
+}
