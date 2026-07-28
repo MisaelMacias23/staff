@@ -94,7 +94,7 @@ body {
     height: 20rem;
     width: 20rem;
     border-radius: 50%;
-    background-image: url("../assets/img/avatar.jpeg");
+    background-image: url("../assets/img/GABY.PNG");
     background-size: cover;
     margin-bottom: 2rem;
     position: relative; }
@@ -314,16 +314,21 @@ body {
   border-radius: 50%;
   fill: #faf9f9;
   backface-visibility: hidden;
-  cursor: pointer; }
-  .contact-icon:hover {
-    opacity: 1;
-    transform: scale(1.15) translateY(-3px);
-    fill: #068983; }
-  .contact-icon--footer {
-    height: 1.5rem;
-    width: 1.5rem;
-    margin-right: .5rem;
-    fill: #faf9f9; }
+  cursor: pointer; 
+}
+.contact-icon:hover
+{
+  opacity: 1;
+  transform: scale(1.15) translateY(-3px);
+  fill: #068983; 
+}
+.contact-icon--footer
+{
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: .5rem;
+  fill: #faf9f9;
+}
 
 .quote {
   text-align: center;
